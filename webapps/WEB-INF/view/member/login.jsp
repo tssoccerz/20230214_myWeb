@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,24 +11,24 @@
 <body>
 	<jsp:include page="/WEB-INF/view/header.jsp"/>
 	
-	<section>	
+	<section>
 		<form action="login" method="post">
-			id:<input type="text" name="n1">
-			<br>
-			pw:<input type="password" name="n2">
+			id:<input type="text" name="id"> 
+			<br> 
+			pw:<input type="password" name="passwd"> 
 			<br>
 			<button type="submit">로그인하기</button>
 			<button type="button" class="btn enroll">회원가입</button>
 		</form>
 	</section>
-	
+
 	<script>
-		$(".btn.enroll").on("click", handlerClickBtnEnroll);
-		
-		function handlerClickBtnEnroll() {
+		$(".btn.enroll").on("click",handlerClickBtnEnroll);
+		function handlerClickBtnEnroll(){
 			console.log("btnEnroll 눌림");
 			location.href="<%=request.getContextPath()%>/enroll";
 		}
 	</script>
+	
 </body>
 </html>

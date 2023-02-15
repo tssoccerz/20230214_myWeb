@@ -19,7 +19,6 @@ public class HomeController extends HttpServlet {
      */
     public HomeController() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -29,6 +28,5 @@ public class HomeController extends HttpServlet {
 		// 
 		request.getRequestDispatcher("/WEB-INF/view/index.jsp").forward(request, response);
 	}
-
-
+	
 }
