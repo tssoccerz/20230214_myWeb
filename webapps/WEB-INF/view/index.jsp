@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>20230214 myWeb home</title>
+<title>서버프로그램 구현 실습</title>
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 </head>
 <body>
