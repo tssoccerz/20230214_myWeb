@@ -27,4 +27,23 @@
 		%>
 	</div>
 	<hr>
+	
+	<script>
+		$(".btn.login").on("click", handlerClickBtnLogin);
+		$(".btn.logout").on("click", handlerClickBtnLogout);
+		$(".btn.myinfo").on("click", handlerClickBtnMyinfo);
+	
+		function handlerClickBtnMyinfo(){
+			console.log("BtnMyinfo 눌림");
+			location.href="<%=request.getContextPath()%>/myinfo";
+		}
+		function handlerClickBtnLogin(){
+			console.log("btnLogin 눌림");
+			location.href="<%=request.getContextPath()%>/login";
+		}
+		function handlerClickBtnLogout(){
+			console.log("btnLogout 눌림");
+			location.href="<%=request.getContextPath()%>/logout";
+		}
+	</script>
 </header>
