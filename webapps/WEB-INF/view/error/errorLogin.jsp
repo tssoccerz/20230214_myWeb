@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>에러 페이지</title>
 </head>
 <body>
 	<script>
-		var errMsg = '${errMsg}';
+		var errMsg = '<%=(String) request.getAttribute("errorMsg")%>';
+		//var errMsg = '${errorMsg}';
 		alert(errMsg);
 	</script>
 	<h4>로그인 되지 않았습니다. 로그인 페이지로 이동하세요.</h4>
