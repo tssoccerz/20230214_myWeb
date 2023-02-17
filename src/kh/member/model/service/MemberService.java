@@ -6,6 +6,7 @@ import static kh.common.jdbc.JdbcTemplate.*;
 import kh.member.model.dao.MemberDAO;
 import kh.member.model.vo.MemberVO;
 
+
 public class MemberService {
 	// 내정보 보기
 	public MemberVO myInfo(String id) {
